@@ -1,0 +1,13 @@
+# user specific files
+DS_Store
+.vscode
+
+# python
+__pycache__
+.pytest_cache
+*.pyc
+
+# generated files
+result.png
+wordcloud*.png
+!wordcloud-result.png

@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Wordcloud generator</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- flex div -->
+  <div style="display: flex; justify-content: space-around;">
+    <div>
+      <textarea id="input-text-area" rows="10" cols="88" placeholder="워드클라우드 생성을 위한 텍스트를 입력해주세요"></textarea>
+      <div id="wordcloud-area"></div>
+      <div>
+        <button onclick="executePythonCode()">GENERATE</button>
+        <button onclick="fillExample()">FILL EXAMPLE</button>
+        <button onclick="clearInput()">CLEAR</button>
+      </div>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: space-around;">
+    <div>
+      <img id="output-image">
+    </div>
+  </div>
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js"></script>
+  <script src="web.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

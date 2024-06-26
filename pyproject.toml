@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "colosus"
+version = "0.1.0"
+description = ""
+authors = ["d3fau1t <aciddust20@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+wordcloud = "^1.9.3"
+opencv-python = "^4.10.0.82"
+numpy = "^1.26.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_first_party = "colosus"
+known_third_party = "matplotlib,numpy,pandas,wordcloud"
